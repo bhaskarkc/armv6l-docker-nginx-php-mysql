@@ -1,0 +1,22 @@
+# Automatically generated for Debian scripts. DO NOT TOUCH!
+[client]
+host     = localhost
+user     = moto
+password = moto
+socket   = /var/run/mysqld/mysqld.sock
+
+[mysql_upgrade]
+host     = localhost
+user     = moto
+password = moto
+socket   = /var/run/mysqld/mysqld.sock
+basedir  = /usr
+
+[mysqld]
+skip-host-cache
+skip-name-resolve
+
+[mysqldump]
+quick
+quote-names
+max_allowed_packet      = 16M
