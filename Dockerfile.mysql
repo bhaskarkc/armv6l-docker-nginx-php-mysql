@@ -2,4 +2,4 @@ FROM  hypriot/rpi-mysql
 
 RUN rm /etc/mysql/debian.cnf
 
-COPY docker/mysql/debian.cnf /etc/mysql/debian.cnf
+COPY dockeretc/mysql/debian.cnf /etc/mysql/debian.cnf

@@ -37,8 +37,8 @@ services:
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ALLOW_EMPTY_PASSWORD=false
     volumes:
-      - ./database/dbseed.sql.gz:/docker-entrypoint-initdb.d/dbseed.sql.gz
-      - ./mysqldata:/var/lib/mysql
+      - ./data/db/dumps/dbseed.sql.gz:/docker-entrypoint-initdb.d/dbseed.sql.gz
+      - ./data/db/mysql:/var/lib/mysql
 volumes:
   web:
   config:
